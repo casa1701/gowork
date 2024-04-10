@@ -1,0 +1,8 @@
+2024-04-10 上午:
+    为代码开启依赖管理
+        go mod init example/hello // 会自动生成 go.mod文件
+
+    调用其它模块的代码
+    1.引入包并调用:  `import "rsc.io/quote/v4"`
+    2.命令行: `go mod tidy`  //会自动生成go.sum
+    3.运行查看输出  go run .
